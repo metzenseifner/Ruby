@@ -1,0 +1,8 @@
+#!/bin/env ruby
+
+
+ARGF.each_line do |line|
+  if line.match(/\\ithgeneral|\\section|\\subsection|\\subsubsection|\\parapgraph/)
+    puts line
+  end
+end
